@@ -1,0 +1,10 @@
+AST
+    [ ValueDefinition
+        ( TypeAnnotation "x" IntT )
+    , ValueDefinition
+        ( NameDefinition "x" []
+            ( LitExpr
+                ( IntLiteral 2 )
+            )
+        )
+    ]

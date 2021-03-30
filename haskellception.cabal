@@ -1,0 +1,74 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           haskellception
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/haskellception#readme>
+homepage:       https://github.com/githubuser/haskellception#readme
+bug-reports:    https://github.com/githubuser/haskellception/issues
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2020 Author name here
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/haskellception
+
+library
+  exposed-modules:
+      Lexer
+      Ourlude
+      Parser
+      Types
+  other-modules:
+      Paths_haskellception
+  hs-source-dirs:
+      src
+  default-extensions:
+      NoImplicitPrelude
+  build-depends:
+      base >=4.7 && <5
+    , containers ==0.6.*
+    , mtl ==2.2.*
+    , pretty-simple
+  default-language: Haskell2010
+
+executable haskellception-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_haskellception
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , containers ==0.6.*
+    , haskellception
+    , mtl ==2.2.*
+    , pretty-simple
+  default-language: Haskell2010
+
+test-suite haskellception-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_haskellception
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , containers ==0.6.*
+    , haskellception
+    , mtl ==2.2.*
+    , pretty-simple
+  default-language: Haskell2010

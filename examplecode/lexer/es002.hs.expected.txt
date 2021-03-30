@@ -1,0 +1,21 @@
+[ OpenBrace
+, LowerName "z"
+, Equal
+, Let
+, OpenBrace
+, LowerName "x"
+, Equal
+, Let
+, OpenBrace
+, LowerName "y"
+, Equal
+, IntLit 3
+, CloseBrace
+, Semicolon
+, In
+, LowerName "y"
+, CloseBrace
+, In
+, LowerName "x"
+, CloseBrace
+]

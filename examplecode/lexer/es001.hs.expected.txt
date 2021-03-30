@@ -1,0 +1,14 @@
+[ OpenBrace
+, LowerName "x"
+, Equal
+, IntLit 1
+, Semicolon
+, LowerName "y"
+, Equal
+, IntLit 2
+, Semicolon
+, LowerName "z"
+, Equal
+, IntLit 3
+, CloseBrace
+]
